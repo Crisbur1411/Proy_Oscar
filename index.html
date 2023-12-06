@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/index.css'>
+</head>
+<body>
+    
+    <form class="login" onsubmit="return validateLogin()">
+        <input type="email" id="emailInput" placeholder="john@doe.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required />
+        <input type="password" id="passwordInput" placeholder="Password" required />
+        <input class="button" type="submit" />
+    </form>
+
+    <!-- Ventana modal para mostrar el mensaje de bienvenida -->
+    <div id="overlay"></div>
+    <div id="modal">
+        <p>Bienvenido, has iniciado sesión con éxito.</p>
+        <button onclick="cerrarModal()">Continuar</button>
+    </div>
+
+    <div id="newModal">
+        <img id="newModalImage" src="./Imagenes/carga.gif" alt="Descripción de la imagen">
+    </div>
+    
+    <script src='./JS/index.JS'></script>
+
+</body>
+</html>
