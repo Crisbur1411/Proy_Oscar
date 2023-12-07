@@ -7,10 +7,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./CSS/index.css'>
 </head>
+
 <body>
-    
+
     <form class="login" onsubmit="return validateLogin()">
-        <input type="email" id="emailInput" placeholder="john@doe.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required />
+        <input type="email" id="emailInput" placeholder="john@doe.com" required />
         <input type="password" id="passwordInput" placeholder="Password" required />
         <input class="button" type="submit" />
     </form>
@@ -25,8 +26,9 @@
     <div id="newModal">
         <img id="newModalImage" src="./Imagenes/carga.gif" alt="Descripción de la imagen">
     </div>
-    
+
     <script src='./JS/index.JS'></script>
 
 </body>
+
 </html>
